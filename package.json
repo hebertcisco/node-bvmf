@@ -1,7 +1,7 @@
 {
   "name": "bvmf",
   "version": "0.1.0",
-  "description": "TypeScript NPM Module Boilerplate",
+  "description": "Promise-based abstraction integrated with statusinvest.com.br for stock quotes",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -21,8 +21,11 @@
     "url": "git+https://github.com/hebertcisco/bvmf.git"
   },
   "keywords": [
-    "boilerplate",
-    "typescript"
+    "promise",
+    "typescript",
+    "quotes",
+    "invest",
+    "stock"
   ],
   "author": "Hebert Cisco",
   "license": "MIT",
