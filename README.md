@@ -1,7 +1,7 @@
 <p align="center">
  <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/bvmf/main/.github/images/favicon512x512-npm.png" align="center" alt=":package: bvmf" />
  <h2 align="center">:package: bvmf</h2>
- <p align="center">TypeScript NPM Module Boilerplate</p>
+ <p align="center">Promise-based abstraction integrated with statusinvest.com.br for stock quotes</p>
 </p>
 
   <p align="center">
@@ -25,7 +25,7 @@
 
 <p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
 
-<p align="center"><strong>TypeScript NPM Module Boilerplate</strong>✨</p>
+<p align="center"><strong>Promise-based abstraction integrated with statusinvest.com.br for stock quotes</strong>✨</p>
 
 
 # Getting started
