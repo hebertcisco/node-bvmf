@@ -37,13 +37,6 @@
 ### Open the directory and run the script line:
 
 ```bash
-cd bvmf && npm i && rm -rf .git && git init
+cd bvmf && npm i
 ```
 
-Or create use the button "Use this template"
-
-Edit the Icon on Figma:
-
-<a href="https://www.figma.com/file/vpevGX3j9tmtW8OyLQ9eUm/bvmf-icon?node-id=0%3A1">
-   <img alt="Figma Icon" src="https://raw.githubusercontent.com/hebertcisco/bvmf/main/.github/images/figma-badge.png"/>
-</a>
