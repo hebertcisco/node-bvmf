@@ -2,7 +2,7 @@ import cheerio from 'cheerio';
 import { IStockExchange } from '../typescript';
 
 async function extractHTML(htmlContent: string) {
-  return new Promise(async (resolve, reject) => {
+  return new Promise((resolve, reject) => {
     try {
       const result: IStockExchange[] = [];
       const $ = cheerio.load(htmlContent);
