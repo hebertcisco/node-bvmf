@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/bvmf/main/.github/images/favicon512x512-npm.png" align="center" alt=":package: bvmf" />
+ <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/bvmf/main/.github/images/favicon512x512-bvmf.png" align="center" alt=":package: bvmf" />
  <h2 align="center">:package: bvmf</h2>
  <p align="center">Promise-based abstraction integrated with statusinvest.com.br for stock quotes</p>
 </p>
