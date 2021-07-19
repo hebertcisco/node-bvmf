@@ -29,7 +29,18 @@ async function extractHTML(htmlContent: string) {
           .find('div')
           .find('strong')
           .text()
-          .replace(/[-]/g, "")
+          .replace(/[-]/g, ""),
+
+        yield: $('#main-2')
+          .find('div:nth-child(4)')
+          .find('div')
+          .find('div.pb-3.pb-md-5')
+          .find('div')
+          .find('div:nth-child(4)')
+          .find('div')
+          .find('div:nth-child(1)')
+          .find('strong')
+          .text()
       });
       resolve({ result });
     } catch (err) {
