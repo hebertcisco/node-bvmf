@@ -65,7 +65,7 @@ async function extractHTML(htmlContent: string) {
           .find('div')
           .find('div.d-block.d-md-flex.mb-5.img-lazy-group')
           .find('div.company-brand.w-100.w-md-30.p-3.rounded.mb-3.mb-md-0.bg-lazy')
-          .attr("data-img")?.replace(/[url(+)]/g, ""),
+          .attr("data-img")?.replace(/[(+)]/g, "").slice(3, 999),
         name: $('#company-section')
           .find('div')
           .find('div.d-block.d-md-flex.mb-5.img-lazy-group')

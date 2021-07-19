@@ -14,5 +14,5 @@ export interface IResult {
 }
 export interface IOptions {
   bvmf: string;
-  max: number;
+  max?: number | 1;
 }
