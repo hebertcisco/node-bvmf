@@ -80,6 +80,8 @@ async function returnQuote(bvmf) {
   "stock": [
     {
       "currentValue": "11,11",
+      "dailyLiquidity": "391.965.857,19",
+      "yield": "2,67"
     }
   ]
 }
