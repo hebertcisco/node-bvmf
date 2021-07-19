@@ -81,7 +81,12 @@ async function returnQuote(bvmf) {
     {
       "currentValue": "11,11",
       "dailyLiquidity": "391.965.857,19",
-      "yield": "2,67"
+      "yield": "2,67",
+      "min2Weeks": "8,57",
+      "max2Weeks": "12,05",
+      "logo": "https://cdn-statsinvest.azeedge.net/img/company/cove/345.jpg",
+      "name": "ITAUSA INVESTIMENTOS ITAU S.A.",
+      "site": "http://www.itausa.com.br"
     }
   ]
 }
@@ -92,9 +97,9 @@ async function returnQuote(bvmf) {
 ```ts
 import bvmf from 'bvmf';
 
-it('Works', async () => {
+it('Works", async () => {
   const result = await bvmf({
-    bvmf: 'itsa4', max: 1
+    bvmf "itsa4", max: 1
   });
   console.log(result);
   expect(result.bvmf).toBe('itsa4');
