@@ -17,6 +17,19 @@ async function extractHTML(htmlContent: string) {
           .find('div')
           .find('.value')
           .text(),
+        dailyLiquidity: $('#main-2')
+          .find('div:nth-child(4)')
+          .find('div')
+          .find('div:nth-child(4)')
+          .find('div')
+          .find('div')
+          .find('div:nth-child(3)')
+          .find('div')
+          .find('div')
+          .find('div')
+          .find('strong')
+          .text()
+          .replace(/[-]/g, "")
       });
       resolve({ result });
     } catch (err) {

@@ -1,5 +1,6 @@
 export interface IStockExchange {
   currentValue: string;
+  dailyLiquidity: string;
 }
 export interface IResult {
   result: IStockExchange[];
