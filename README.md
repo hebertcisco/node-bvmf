@@ -40,3 +40,62 @@
 cd bvmf && npm i
 ```
 
+### Usage
+
+#### Import
+
+```ts
+//using ES6
+import bvmf from 'bvmf';
+//or using ES5
+const bvmf  = require("bvmf")
+```
+
+#### Using
+
+```ts
+//using ES6
+import bvmf from 'bvmf';
+
+async function returnQuote(bvmf) {
+    const result = await bvmf(
+      {
+        bvmf: bvmf
+      });
+    return(result);
+ }
+ try{
+  console.log(returnQuote("itsa4"));
+ }catch(err){
+  console.error(err);
+ }
+```
+
+#### Returns
+
+```json
+{
+  "bvmf": "itsa4",
+  "total": 1,
+  "stock": [
+    {
+      "currentValue": "11,11",
+    }
+  ]
+}
+```
+
+#### Testing
+
+```ts
+import bvmf from 'bvmf';
+
+it('Works', async () => {
+  const result = await bvmf({
+    bvmf: 'itsa4', max: 1
+  });
+  console.log(result);
+  expect(result.bvmf).toBe('itsa4');
+});
+
+```
