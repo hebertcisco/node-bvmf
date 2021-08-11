@@ -5,5 +5,5 @@ it('Works', async () => {
     bvmf: 'itsa4', max: 1
   });
   console.log(result);
-  expect(result.bvmf).toBe('itsa4');
+  expect(result.stock[0].name).toBe('ITAUSA INVESTIMENTOS ITAU S.A.');
 });
