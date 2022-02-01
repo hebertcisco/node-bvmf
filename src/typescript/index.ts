@@ -4,9 +4,9 @@ export interface IStockExchange {
   yield: string;
   min2Weeks: string;
   max2Weeks: string;
-  logo: string | any;
-  name: string | any;
-  site: string | any;
+  logo?: string;
+  name?: string;
+  site?: string;
 }
 export interface IResult {
   result: IStockExchange[];
