@@ -1,4 +1,5 @@
 import cheerio from 'cheerio';
+import { BASE_URL } from '../constants';
 import { IStockExchange } from '../typescript';
 
 async function extractHTML(htmlContent: string) {
@@ -61,7 +62,7 @@ async function extractHTML(htmlContent: string) {
           .find('div:nth-child(1)')
           .find('strong')
           .text(),
-        logo: `https://statusinvest.com.br/${$('#company-section')
+        logo: `${BASE_URL}${$('#company-section')
           .find('div')
           .find('div.d-block.d-md-flex.mb-5.img-lazy-group')
           .find('div.company-brand.w-100.w-md-30.p-3.rounded.mb-3.mb-md-0.bg-lazy')
