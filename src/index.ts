@@ -23,7 +23,7 @@ export default async (options: IOptions) => {
 
   while (keepGoing) {
     const contentPage = await fetchPage(bvmf, `${BASE_URL}/acoes`);
-    const result = await extractHTML(contentPage as unknown as string) as IResult;
+    const result = (await extractHTML(contentPage as unknown as string)) as IResult;
 
     stock.push(...result.result);
 
