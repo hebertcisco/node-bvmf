@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/axios": "0.14.0",
     "@types/cheerio": "0.22.31",
-    "@types/iconv-lite": "^0.0.1",
+    "@types/iconv-lite": "0.0.1",
     "@types/jest": "27.5.1",
     "@typescript-eslint/eslint-plugin": "5.26.0",
     "@typescript-eslint/parser": "5.26.0",
