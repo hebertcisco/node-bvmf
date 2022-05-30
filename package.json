@@ -1,6 +1,6 @@
 {
   "name": "bvmf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise-based abstraction integrated with statusinvest.com.br for stock quotes",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@types/axios": "0.14.0",
     "@types/cheerio": "0.22.31",
+    "@types/iconv-lite": "^0.0.1",
     "@types/jest": "27.5.1",
     "@typescript-eslint/eslint-plugin": "5.26.0",
     "@typescript-eslint/parser": "5.26.0",
@@ -52,6 +53,7 @@
   "dependencies": {
     "axios": "^0.27.0",
     "cheerio": "^1.0.0-rc.10",
+    "iconv-lite": "^0.6.3",
     "slugify": "^1.6.0"
   }
 }
