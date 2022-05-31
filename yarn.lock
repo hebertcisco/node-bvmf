@@ -1281,10 +1281,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-plugin-jest@26.4.5:
-  version "26.4.5"
-  resolved "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-26.4.5.tgz"
-  integrity sha512-jGPKXoV7v21gvt2QivCPuN1c2RePxJ9XnYQjucioAZhMTXrJ0y48QhP7UOpgNs/sj0Lns2NKRvoAjnyXDCfqbw==
+eslint-plugin-jest@26.4.6:
+  version "26.4.6"
+  resolved "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-26.4.6.tgz"
+  integrity sha512-R3mq1IepnhtsukHQsWxdyKra3OVwYB+N4k8i45ndqSfr8p9KZV6G+EIUt1Z7hzAh4KlsbXG+nCTlNeGFLFLNvA==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -1537,7 +1537,7 @@ fs.realpath@^1.0.0:
 
 fsevents@^2.3.2:
   version "2.3.2"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 function-bind@^1.1.1:
