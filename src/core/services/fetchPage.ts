@@ -1,6 +1,7 @@
 import iconv from 'iconv-lite';
 import axios from 'axios';
 import randomUseragent from 'random-useragent';
+import ua from '../../shared/constants/ua';
 
 async function fetchPage(bvmf: string, baseUrl: string): Promise<string> {
   const ENCODING = 'utf-8';
@@ -9,7 +10,7 @@ async function fetchPage(bvmf: string, baseUrl: string): Promise<string> {
   const response = await axios.get(`${baseUrl}/${bvmf}`, {
     responseType: 'arraybuffer',
     headers: {
-      'User-Agent': UA,
+      'User-Agent': UA || ua(),
       'Accept-Encoding': 'gzip, deflate, br',
       'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
       'Cache-Control': 'no-cache',
