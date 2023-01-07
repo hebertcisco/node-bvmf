@@ -6,24 +6,24 @@ import extractHTML from '../shared/utils/extractHTML';
 describe('stock', () => {
   it('stock', async () => {
     const bvmf = 'some-bvmf';
- 
+
     const htmlContent = htmlLoader({
       site: 'statusinvest',
       source: 'acoes/itsa4',
     });
-    
+
     const body = await extractHTML(htmlContent);
 
     jest.spyOn(axios, 'get').mockResolvedValue({ data: body });
 
     const result = await stock({
-      bvmf:bvmf,
+      bvmf: bvmf,
       max: 1,
     });
     const { stock: stockData } = result;
-  
+
     const resultStock = stockData[0];
-  
+
     expect(resultStock).toHaveProperty('currentValue');
     expect(resultStock).toHaveProperty('dailyLiquidity');
     expect(resultStock).toHaveProperty('yield');
