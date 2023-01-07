@@ -38,6 +38,7 @@
     "@types/cheerio": "0.22.31",
     "@types/iconv-lite": "0.0.1",
     "@types/jest": "29.2.5",
+    "@types/random-useragent": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "5.48.0",
     "@typescript-eslint/parser": "5.48.0",
     "eslint": "8.31.0",
@@ -54,6 +55,8 @@
     "axios": "^1.2.2",
     "cheerio": "^1.0.0-rc.12",
     "iconv-lite": "^0.6.3",
-    "slugify": "^1.6.5"
+    "random-useragent": "^0.5.0",
+    "slugify": "^1.6.5",
+    "zod": "^3.20.2"
   }
 }
