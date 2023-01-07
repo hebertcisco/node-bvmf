@@ -1,42 +1,31 @@
-import { BASE_URL } from './constants';
-import fetchPage from './services/fetchPage';
-import { IOptions, IStockExchange, IResult } from './typescript';
-import extractHTML from './utils/extractHTML';
-import _throw from './utils/_throw';
 import slugify from 'slugify';
+
+import fetchPage from './core/services/fetchPage';
+import extractHTML from './shared/utils/extractHTML';
+import _throw from './shared/utils/_throw';
+
+import { STATUS_INVEST_BASE_URL } from './shared/constants';
+
+import type { IOptions, IStockExchange } from './contract/interfaces';
 
 export default async (options: IOptions) => {
   if (options === undefined || options.bvmf === undefined) {
     _throw('A bvmf must be defined');
   }
 
-  const bvmf = slugify(`${options.bvmf}`, {
+  const bvmf: string = slugify(`${options.bvmf}`, {
     replacement: '_',
     remove: /[*+~.()'"!:@]/g,
     lower: true,
   });
 
-  let keepGoing = true;
-  let current = 1;
+  const stock: IStockExchange[] = [];
 
-  let stock: IStockExchange[] = [];
+  const contentPage: string = await fetchPage(bvmf, `${STATUS_INVEST_BASE_URL}/acoes`);
+  const result: IStockExchange[] = await extractHTML(contentPage);
 
-  while (keepGoing) {
-    const contentPage = await fetchPage(bvmf, `${BASE_URL}/acoes`);
-    const result = (await extractHTML(contentPage as unknown as string)) as IResult;
-
-    stock.push(...result.result);
-
-    if (options.max !== undefined && stock.length > options.max) {
-      stock = stock.slice(0, options.max);
-      keepGoing = false;
-    }
-
-    if (result.next === false) {
-      keepGoing = false;
-    }
-
-    current = current + 1;
+  for await (const item of result) {
+    stock.push(item);
   }
 
   return { total: stock.length, bvmf, stock };

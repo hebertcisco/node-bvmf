@@ -1,3 +1,3 @@
 {
-  "conventionalCommits.scopes": ["gitignore", "config", "dependencies"]
+  "conventionalCommits.scopes": ["gitignore", "config", "dependencies", "fetchPage"]
 }
