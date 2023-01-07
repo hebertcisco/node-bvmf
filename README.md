@@ -31,7 +31,12 @@
 <p align="center"><strong>Promise-based abstraction integrated with statusinvest.com.br for stock quotes</strong>✨</p>
 
 
-# Getting started
+> Getting started
+
+[![Node.js build and publish package](https://github.com/hebertcisco/bvmf/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/bvmf/actions/workflows/npm-publish.yml)
+[![Running Code Coverage](https://github.com/hebertcisco/bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/bvmf/actions/workflows/coverage.yml)
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/bvmf)
 
 ## Installation
 
@@ -124,7 +129,7 @@ Or buy me a coffee 🙌🏾
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
 
-BTC WALLET: 3P4oVEdSP8CPdFZZwS2dboRyLFXLSTE7Gq
+**BTC WALLET**: `3P4oVEdSP8CPdFZZwS2dboRyLFXLSTE7Gq`
 
 ## 📝 License
 
