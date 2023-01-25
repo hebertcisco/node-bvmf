@@ -4,7 +4,7 @@ import htmlLoader from '../../testing/mocks/html/html-loader';
 import stock from '../index';
 import extractHTML from '../shared/utils/extractHTML';
 
-const feature = loadFeature('src/stock.feature');
+const feature = loadFeature('src/__tests__/stock.feature');
 
 defineFeature(feature, (test) => {
   let bvmf: string;
