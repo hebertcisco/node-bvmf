@@ -17,7 +17,11 @@ async function fetchPage(bvmf: string, baseUrl: string): Promise<string> {
       Connection: 'keep-alive',
     },
   });
-  const arrayBuffer = Buffer.from(response.data, ENCODING);
+  const data = String(response.data);
+
+  if (!data) throw new Error(`Error retrying the data`);
+
+  const arrayBuffer = Buffer.from(data, ENCODING);
   const stringBody = iconv.decode(arrayBuffer, ENCODING);
 
   if (!stringBody) {
