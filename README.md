@@ -102,17 +102,17 @@ async function returnQuote(bvmf) {
 
 #### Testing
 
-```ts
-import bvmf from 'bvmf';
+I used  [jest-cucumber](https://github.com/bencompton/jest-cucumber)
 
-it('Works", async () => {
-  const result = await bvmf({
-    bvmf "itsa4", max: 1
-  });
-  console.log(result);
-  expect(result.bvmf).toBe('itsa4');
-});
+Example:
 
+```feature
+Feature: Retrieve stock information
+
+Scenario: Retrieving stock data
+    Given I want to retrieve stock data
+    When I call the stock function with the bvmf code
+    Then I should receive an object with the stock data
 ```
 
 ## 🤝 Contributing
