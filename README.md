@@ -1,7 +1,7 @@
 <p align="center">
  <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/bvmf/main/.github/images/favicon512x512-bvmf.png" align="center" alt=":package: bvmf" />
  <h2 align="center">:package: bvmf</h2>
- <p align="center">Promise-based abstraction integrated with statusinvest.com.br for stock quotes</p>
+ <p align="center"A web scraping library for extracting real-time stock information from the Brazilian stock exchange using Node.js.</p>
 </p>
 
   <p align="center">
@@ -28,8 +28,7 @@
 
 <p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
 
-<p align="center"><strong>Promise-based abstraction integrated with statusinvest.com.br for stock quotes</strong>✨</p>
-
+<p align="center"><strong>A web scraping library for extracting real-time stock information from the Brazilian stock exchange using Node.js.</strong>✨</p>
 
 > Getting started
 
