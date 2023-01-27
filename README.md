@@ -35,7 +35,7 @@
 [![Node.js build and publish package](https://github.com/hebertcisco/bvmf/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/bvmf/actions/workflows/npm-publish.yml)
 [![Running Code Coverage](https://github.com/hebertcisco/bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/bvmf/actions/workflows/coverage.yml)
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/bvmf)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/node-bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/node-bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/bvmf)
 
 ## Installation
 
