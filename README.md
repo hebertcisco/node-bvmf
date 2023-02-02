@@ -1,29 +1,29 @@
 <p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/bvmf/main/.github/images/favicon512x512-bvmf.png" align="center" alt=":package: bvmf" />
+ <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/node-bvmf/main/.github/images/favicon512x512-bvmf.png" align="center" alt=":package: bvmf" />
  <h2 align="center">:package: bvmf</h2>
  <p align="center"A web scraping library for extracting real-time stock information from the Brazilian stock exchange using Node.js.</p>
 </p>
 
   <p align="center">
- <a href="https://github.com/hebertcisco/bvmf/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/bvmf?style=flat&color=336791" />
+ <a href="https://github.com/hebertcisco/node-bvmf/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/node-bvmf?style=flat&color=336791" />
     </a>
-    <a href="https://github.com/hebertcisco/bvmf/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/bvmf?style=flat&color=336791" />
+    <a href="https://github.com/hebertcisco/node-bvmf/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/node-bvmf?style=flat&color=336791" />
     </a>
-     <a href="https://github.com/hebertcisco/bvmf">
-      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/bvmf?style=flat&color=336791" />
+     <a href="https://github.com/hebertcisco/node-bvmf">
+      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/node-bvmf?style=flat&color=336791" />
     </a>
-    <a href="https://github.com/hebertcisco/bvmf">
-      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/bvmf?color=336791&label=Total%20downloads" />
+    <a href="https://github.com/hebertcisco/node-bvmf">
+      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/node-bvmf?color=336791&label=Total%20downloads" />
     </a>
-    <a href="https://github.com/hebertcisco/bvmf">
-      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/bvmf.svg" />
+    <a href="https://github.com/hebertcisco/node-bvmf">
+      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/node-bvmf.svg" />
     </a>
     <br />
     <br />
-  <a href="https://github.com/hebertcisco/bvmf/issues/new/choose">Report Bug</a>
-  <a href="https://github.com/hebertcisco/bvmf/issues/new/choose">Request Feature</a>
+  <a href="https://github.com/hebertcisco/node-bvmf/issues/new/choose">Report Bug</a>
+  <a href="https://github.com/hebertcisco/node-bvmf/issues/new/choose">Request Feature</a>
   </p>
 
 <p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
@@ -32,14 +32,14 @@
 
 > Getting started
 
-[![Node.js build and publish package](https://github.com/hebertcisco/bvmf/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/bvmf/actions/workflows/npm-publish.yml)
-[![Running Code Coverage](https://github.com/hebertcisco/bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/bvmf/actions/workflows/coverage.yml)
+[![Node.js build and publish package](https://github.com/hebertcisco/node-bvmf/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/npm-publish.yml)
+[![Running Code Coverage](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml)
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/node-bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/node-bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/bvmf)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/node-bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/node-bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/node-bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/node-bvmf)
 
 ## Installation
 
-> Clone this repository: `git clone https://github.com/hebertcisco/bvmf`
+> Clone this repository: `git clone https://github.com/hebertcisco/node-bvmf`
 
 ### Open the directory and run the script line:
 
