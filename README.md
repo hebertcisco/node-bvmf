@@ -12,10 +12,10 @@
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/node-bvmf?style=flat&color=336791" />
     </a>
      <a href="https://github.com/hebertcisco/node-bvmf">
-      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/node-bvmf?style=flat&color=336791" />
+      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/bvmf?style=flat&color=336791" />
     </a>
     <a href="https://github.com/hebertcisco/node-bvmf">
-      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/node-bvmf?color=336791&label=Total%20downloads" />
+      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/bvmf?color=336791&label=Total%20downloads" />
     </a>
     <a href="https://github.com/hebertcisco/node-bvmf">
       <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/node-bvmf.svg" />
@@ -32,7 +32,6 @@
 
 > Getting started
 
-[![Node.js build and publish package](https://github.com/hebertcisco/node-bvmf/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/npm-publish.yml)
 [![Running Code Coverage](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml)
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/node-bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/node-bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/node-bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/node-bvmf)
@@ -127,6 +126,8 @@ Or buy me a coffee 🙌🏾
 <a href="https://www.buymeacoffee.com/hebertcisco">
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
+
+Or
 
 **BTC WALLET**: `3P4oVEdSP8CPdFZZwS2dboRyLFXLSTE7Gq`
 
