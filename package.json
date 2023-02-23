@@ -1,6 +1,6 @@
 {
   "name": "bvmf",
-  "version": "1.0.63",
+  "version": "1.0.64",
   "description": "Promise-based abstraction integrated with statusinvest.com.br for stock quotes",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
