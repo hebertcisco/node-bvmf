@@ -38,12 +38,8 @@
 
 ## Installation
 
-> Clone this repository: `git clone https://github.com/hebertcisco/node-bvmf`
-
-### Open the directory and run the script line:
-
 ```bash
-cd bvmf && npm i
+npm i bvmf
 ```
 
 ### Usage
