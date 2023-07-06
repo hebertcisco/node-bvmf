@@ -40,25 +40,25 @@
     "@types/iconv-lite": "0.0.1",
     "@types/jest": "29.5.2",
     "@types/random-useragent": "^0.3.1",
-    "@typescript-eslint/eslint-plugin": "5.60.1",
-    "@typescript-eslint/parser": "5.60.1",
-    "eslint": "8.43.0",
+    "@typescript-eslint/eslint-plugin": "5.61.0",
+    "@typescript-eslint/parser": "5.61.0",
+    "eslint": "8.44.0",
     "eslint-plugin-jest": "27.2.2",
-    "jest": "29.5.0",
+    "jest": "29.6.1",
     "jest-cucumber": "^3.0.1",
-    "prettier": "2.8.8",
-    "ts-jest": "29.1.0",
+    "prettier": "3.0.0",
+    "ts-jest": "29.1.1",
     "typescript": "5.1.6"
   },
   "files": [
     "lib/**/*"
   ],
   "dependencies": {
-    "axios": "^1.2.2",
+    "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
     "iconv-lite": "^0.6.3",
     "random-useragent": "^0.5.0",
-    "slugify": "^1.6.5",
-    "zod": "^3.20.2"
+    "slugify": "^1.6.6",
+    "zod": "^3.21.4"
   }
 }
