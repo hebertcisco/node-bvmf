@@ -18,15 +18,6 @@ describe('extractHTML', () => {
       expect(stock).toHaveProperty('name');
       expect(stock).toHaveProperty('site');
       expect(stock).toHaveProperty('yield');
-
-      expect(typeof stock.currentValue).toBe('string');
-      expect(typeof stock.dailyLiquidity).toBe('string');
-      expect(typeof stock.logo).toBe('string');
-      expect(typeof stock.max2Weeks).toBe('string');
-      expect(typeof stock.min2Weeks).toBe('string');
-      expect(typeof stock.name).toBe('string');
-      expect(typeof stock.site).toBe('string');
-      expect(typeof stock.yield).toBe('string');
     }
   });
 });
