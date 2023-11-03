@@ -81,11 +81,11 @@ async function returnQuote(bvmf) {
   "total": 1,
   "stock": [
     {
-      "currentValue": "11,11",
-      "dailyLiquidity": "391.965.857,19",
-      "yield": "2,67",
-      "min2Weeks": "8,57",
-      "max2Weeks": "12,05",
+      "currentValue": 11.11,
+      "dailyLiquidity": 391.965,
+      "yield": 2.67,
+      "min2Weeks": 8.57,
+      "max2Weeks": 12.05,
       "logo": "https://cdn-statsinvest.azeedge.net/img/company/cove/345.jpg",
       "name": "ITAUSA INVESTIMENTOS ITAU S.A.",
       "site": "http://www.itausa.com.br"
