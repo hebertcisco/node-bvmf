@@ -1,9 +1,9 @@
 export interface IStockExchange {
-  currentValue: string;
-  dailyLiquidity: string;
-  yield: string;
-  min2Weeks: string;
-  max2Weeks: string;
+  currentValue: number;
+  dailyLiquidity: number;
+  yield: number;
+  min2Weeks: number;
+  max2Weeks: number;
   logo?: string;
   name?: string;
   site?: string;
