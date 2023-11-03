@@ -7,6 +7,7 @@ import _throw from './shared/utils/_throw';
 import { STATUS_INVEST_BASE_URL } from './shared/constants';
 
 import type { IOptions, IStockExchange } from './contract/interfaces';
+import extractParsedValues from './shared/utils/extractParsedValues';
 
 export default async (options: IOptions) => {
   if (options === undefined || options.bvmf === undefined) {
@@ -22,7 +23,9 @@ export default async (options: IOptions) => {
   const stock: IStockExchange[] = [];
 
   const contentPage: string = await fetchPage(bvmf, `${STATUS_INVEST_BASE_URL}/acoes`);
-  const result: IStockExchange[] = await extractHTML(contentPage);
+
+  const raw_result = await extractHTML(contentPage);
+  const result = await extractParsedValues(raw_result);
 
   for await (const item of result) {
     stock.push(item);
