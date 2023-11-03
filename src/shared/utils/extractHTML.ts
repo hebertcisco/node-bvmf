@@ -2,10 +2,8 @@ import cheerio from 'cheerio';
 
 import { STATUS_INVEST_BASE_URL } from '../constants';
 
-import type { IStockExchange } from '../../contract/interfaces';
-
-async function extractHTML(htmlContent: string): Promise<IStockExchange[]> {
-  const result: IStockExchange[] = [];
+async function extractHTML(htmlContent: string): Promise<object[]> {
+  const result: object[] = [];
   const $ = cheerio.load(htmlContent);
   result.push({
     currentValue: $('#main-2')
