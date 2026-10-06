@@ -9,9 +9,9 @@ async function extractParsedValues(htmlContent: Array<object>): Promise<IStockEx
     const _yield = Number(item['yield'].replace(/[,]/g, '.'));
     const min2Weeks = Number(item['min2Weeks'].replace(/[,]/g, '.'));
     const max2Weeks = Number(item['max2Weeks'].replace(/[,]/g, '.'));
-    const logo = item['logo'];
-    const name = item['name'];
-    const site = item['site'];
+    const logo = item['logo'] ?? null;
+    const name = item['name'] ?? null;
+    const site = item['site'] ?? null;
 
     result.push({
       currentValue,

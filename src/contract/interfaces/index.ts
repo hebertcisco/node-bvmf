@@ -1,12 +1,13 @@
 export interface IStockExchange {
   currentValue: number;
-  dailyLiquidity: number;
-  yield: number;
-  min2Weeks: number;
-  max2Weeks: number;
-  logo?: string;
-  name?: string;
-  site?: string;
+  dailyLiquidity: number | null;
+  yield: number | null;
+  min2Weeks: number | null;
+  max2Weeks: number | null;
+  logo: string | null;
+  name: string | null;
+  site: string | null;
+  provider?: string;
 }
 export interface IResult {
   result: IStockExchange[];
@@ -15,4 +16,7 @@ export interface IResult {
 export interface IOptions {
   bvmf: string;
   max?: number | 1;
+  providers?: ProviderName[];
 }
+
+export type ProviderName = 'statusinvest' | 'brapi' | 'yahoo';
