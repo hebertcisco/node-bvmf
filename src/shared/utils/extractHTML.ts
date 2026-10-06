@@ -1,10 +1,10 @@
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 
 import { STATUS_INVEST_BASE_URL } from '../constants';
 
 async function extractHTML(htmlContent: string): Promise<object[]> {
   const result: object[] = [];
-  const $ = cheerio.load(htmlContent);
+  const $ = load(htmlContent);
   result.push({
     currentValue: $('#main-2')
       .find('.container')
