@@ -25,7 +25,20 @@ const quote = await bvmf({ bvmf: 'itsa4' });
 console.log(quote.stock[0]);
 ```
 
-The result has the following shape:
+By default, providers are tried in this order: StatusInvest, brapi.dev, and Yahoo Finance. A provider is considered successful only when it returns a valid current price; transport errors and malformed responses automatically move to the next provider.
+
+To select a provider explicitly, pass its name:
+
+```ts
+const quote = await bvmf({
+  bvmf: 'itsa4',
+  providers: ['brapi']
+});
+```
+
+The brapi.dev provider works without a token for supported symbols. For broader coverage, set `BRAPI_API_KEY` in the server environment. Never expose this value in client-side code.
+
+The result has the following shape. Fields that a provider does not publish are returned as `null`, and `provider` identifies the source used:
 
 ```json
 {
@@ -33,6 +46,7 @@ The result has the following shape:
   "bvmf": "itsa4",
   "stock": [
     {
+      "provider": "statusinvest",
       "currentValue": 11.11,
       "dailyLiquidity": 391.965,
       "yield": 2.67,
