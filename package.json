@@ -48,6 +48,10 @@
     "ts-jest": "^29.4.5",
     "typescript": "^5.9.3"
   },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "unrs-resolver@1.12.2": true
+  },
   "files": [
     "lib/**/*"
   ],
