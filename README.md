@@ -1,84 +1,37 @@
-<p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/node-bvmf/main/.github/images/favicon512x512-bvmf.png" align="center" alt=":package: bvmf" />
- <h2 align="center">:package: bvmf</h2>
- <p align="center"A web scraping library for extracting real-time stock information from the Brazilian stock exchange using Node.js.</p>
-</p>
+# bvmf
 
-  <p align="center">
- <a href="https://github.com/hebertcisco/node-bvmf/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/node-bvmf?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/node-bvmf/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/node-bvmf?style=flat&color=336791" />
-    </a>
-     <a href="https://github.com/hebertcisco/node-bvmf">
-      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/bvmf?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/node-bvmf">
-      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/bvmf?color=336791&label=Total%20downloads" />
-    </a>
-    <a href="https://github.com/hebertcisco/node-bvmf">
-      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/node-bvmf.svg" />
-    </a>
-    <br />
-    <br />
-  <a href="https://github.com/hebertcisco/node-bvmf/issues/new/choose">Report Bug</a>
-  <a href="https://github.com/hebertcisco/node-bvmf/issues/new/choose">Request Feature</a>
-  </p>
+[![CI and coverage](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml)
+[![npm version](https://img.shields.io/npm/v/bvmf)](https://www.npmjs.com/package/bvmf)
+[![npm downloads](https://img.shields.io/npm/dm/bvmf)](https://www.npmjs.com/package/bvmf)
+[![codecov](https://codecov.io/gh/hebertcisco/node-bvmf/branch/main/graph/badge.svg)](https://codecov.io/gh/hebertcisco/node-bvmf)
+[![License](https://img.shields.io/github/license/hebertcisco/node-bvmf)](LICENSE.md)
 
-<p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
-
-<p align="center"><strong>A web scraping library for extracting real-time stock information from the Brazilian stock exchange using Node.js.</strong>✨</p>
-
-> Getting started
-
-[![Running Code Coverage](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml)
-
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hebertcisco/node-bvmf/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hebertcisco/node-bvmf/tree/main) [![codecov](https://codecov.io/gh/hebertcisco/node-bvmf/branch/main/graph/badge.svg?token=SLBRQS3CWJ)](https://codecov.io/gh/hebertcisco/node-bvmf)
+`bvmf` is an open-source TypeScript library for retrieving stock quotes listed in Brazil. It fetches the public StatusInvest page for a ticker and returns a typed, promise-based result for Node.js applications.
 
 ## Installation
 
 ```bash
-npm i bvmf
+npm install bvmf
 ```
 
-### Usage
+Node.js 18.17 or newer is supported.
 
-#### Import
+## Usage
 
 ```ts
-//using ES6
-import bvmf from 'bvmf';
-//or using ES5
-const bvmf  = require("bvmf")
-```
-
-#### Using
-
-```ts
-//using ES6
 import bvmf from 'bvmf';
 
-async function returnQuote(bvmf) {
-    const result = await bvmf(
-      {
-        bvmf: bvmf
-      });
-    return(result);
- }
- try{
-  console.log(returnQuote("itsa4"));
- }catch(err){
-  console.error(err);
- }
+const quote = await bvmf({ bvmf: 'itsa4' });
+
+console.log(quote.stock[0]);
 ```
 
-#### Returns
+The result has the following shape:
 
 ```json
 {
-  "bvmf": "itsa4",
   "total": 1,
+  "bvmf": "itsa4",
   "stock": [
     {
       "currentValue": 11.11,
@@ -88,46 +41,31 @@ async function returnQuote(bvmf) {
       "max2Weeks": 12.05,
       "logo": "https://cdn-statsinvest.azeedge.net/img/company/cove/345.jpg",
       "name": "ITAUSA INVESTIMENTOS ITAU S.A.",
-      "site": "http://www.itausa.com.br"
+      "site": "https://www.itausa.com.br"
     }
   ]
 }
 ```
 
-#### Testing
+## Development
 
-I used  [jest-cucumber](https://github.com/bencompton/jest-cucumber)
-
-Example:
-
-```feature
-Feature: Retrieve stock information
-
-Scenario: Retrieving stock data
-    Given I want to retrieve stock data
-    When I call the stock function with the bvmf code
-    Then I should receive an object with the stock data
+```bash
+npm ci
+npm test
+npm run lint
+npm run build
 ```
 
-## 🤝 Contributing
+The test suite uses Jest and jest-cucumber. Tests mock remote responses, so normal development and CI runs do not depend on a live StatusInvest request.
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](issues).
+## Responsible use
 
-## Show your support
+This package reads publicly available web pages. Respect the source website's terms, robots policy, rate limits, and applicable laws. The returned information is provided for informational purposes only and is not financial advice. The maintainers do not guarantee availability, completeness, or accuracy of third-party data.
 
-Give a ⭐️ if this project helped you!
+## Contributing
 
-Or buy me a coffee 🙌🏾
+Bug reports, feature requests, documentation improvements, and pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request. Security reports should follow [SECURITY.md](SECURITY.md).
 
-<a href="https://www.buymeacoffee.com/hebertcisco">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
-</a>
+## License
 
-Or
-
-**BTC WALLET**: `3P4oVEdSP8CPdFZZwS2dboRyLFXLSTE7Gq`
-
-## 📝 License
-
-Copyright © 2023 [Hebert F Barros](https://github.com/hebertcisco).<br />
-This project is [MIT](LICENSE) licensed.
+This project is licensed under the [MIT License](LICENSE.md).
