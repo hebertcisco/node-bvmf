@@ -3,7 +3,6 @@
 [![CI and coverage](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml/badge.svg)](https://github.com/hebertcisco/node-bvmf/actions/workflows/coverage.yml)
 [![npm version](https://img.shields.io/npm/v/bvmf)](https://www.npmjs.com/package/bvmf)
 [![npm downloads](https://img.shields.io/npm/dm/bvmf)](https://www.npmjs.com/package/bvmf)
-[![codecov](https://codecov.io/gh/hebertcisco/node-bvmf/branch/main/graph/badge.svg)](https://codecov.io/gh/hebertcisco/node-bvmf)
 [![License](https://img.shields.io/github/license/hebertcisco/node-bvmf)](LICENSE.md)
 
 `bvmf` is an open-source TypeScript library for retrieving stock quotes listed in Brazil. It fetches the public StatusInvest page for a ticker and returns a typed, promise-based result for Node.js applications.
